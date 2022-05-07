@@ -8,6 +8,6 @@
   ],
   "scripts": {
     "start": "node server/server.js",
-    "build": "cd react-ui/ && npm i && npm run build && cd ../server && npm i"
+    "build": "cd react-ui/ npm i --only=dev && npm i && npm run build && cd ../server && npm i"
   }
 }
