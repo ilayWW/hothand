@@ -6,7 +6,9 @@ const fetchTeamsGames = async (season = "2020-21") => {
     PlayerOrTeam: "T",
     Season: season,
   };
+  console.log("start leagueGameLog");
   const res = await NBA.stats.leagueGameLog(params);
+  console.log("finish leagueGameLog");
   const { resultSets } = res;
   const headers = resultSets[0].headers;
   const rows = resultSets[0].rowSet;
