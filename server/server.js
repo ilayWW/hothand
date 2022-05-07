@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-// const routes = require("./routes/routes.js");
+const cluster = require("cluster");
 const gamesRoutes = require("./routes/games.route");
 const statsRoutes = require("./routes/stats.route");
 const app = express();
