@@ -4,6 +4,6 @@
   "private": true,
   "scripts": {
     "start": "node server/server.js",
-    "build": "cd react-ui/ && npm install && npm run build && cd ../server && npm i"
+    "build": "cd react-ui/ && npm i && npm run build && cd ../server && npm i"
   }
 }

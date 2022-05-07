@@ -31,5 +31,3 @@ yarn-error.log*
 .idea/modules.xml
 .idea/watcherTasks.xml
 .idea/workspace.xml
-
-public/
