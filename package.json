@@ -2,6 +2,10 @@
   "name": "hothand",
   "version": "0.1.0",
   "private": true,
+  "cacheDirectories": [
+    "server/node_modules",
+    "react-ui/node_modules"
+  ],
   "scripts": {
     "start": "node server/server.js",
     "build": "cd react-ui/ && npm i && npm run build && cd ../server && npm i"
