@@ -1,11 +1,14 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cluster = require("cluster");
-const gamesRoutes = require("./routes/games.route");
-const statsRoutes = require("./routes/stats.route");
-const app = express();
+const numCPUs = require("os").cpus().length;
 const cors = require("cors");
 const path = require("path");
+const gamesRoutes = require("./routes/games.route");
+const statsRoutes = require("./routes/stats.route");
+
+const app = express();
+
 const PORT = process.env.PORT || 3000;
 const isDev = process.env.NODE_ENV !== "production";
 
