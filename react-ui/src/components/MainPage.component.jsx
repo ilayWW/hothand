@@ -92,8 +92,8 @@ export default function MainPage() {
     setSelectedTeam(event.target.value);
   };
 
-  let yearNum = 2020;
-  let shortYearNum = 20;
+  let yearNum = 2023;
+  let shortYearNum = 23;
 
   const years = [...Array(YEARS_BACK).keys()].map(
     (YEAR_BACK) =>

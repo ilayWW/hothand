@@ -9,7 +9,7 @@ const statsRoutes = require("./routes/stats.route");
 
 const app = express();
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 const isDev = process.env.NODE_ENV !== "production";
 
 // Multi-process to utilize all CPU cores.
